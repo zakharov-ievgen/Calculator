@@ -1,7 +1,9 @@
 const num1 = Number(prompt("Enter first number"));
 const num2 = Number(prompt("Enter second number"));
 const action = prompt("Choose desired action");
-if (action === "*") {
+if (isNaN(num1 && num2)) {
+    alert(`Incorrect input`);
+} else if (action === "*") {
     alert(`Correct answer is${num1 * num2}`);
 } else if (action === "+") {
     alert(`Correct answer is${num1 + num2}`);
